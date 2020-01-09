@@ -1,6 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main1 main1 main1 main1 main1 main1'
+    'main main main right right right'
+    'main2 main2 main2 right2 right2 right2'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
 
-
-
+.header-element {
+  grid-area: header;
+  margin-bottom: 50px;
+}
 
 ul.navs {
   list-style-type: none;
@@ -15,7 +29,6 @@ ul.navs {
   width: 100%;
 
 }
-
 
 li {
   display: inline;
@@ -32,4 +45,21 @@ li a {
 
 li a:hover {
   background-color: grey;
+}
+
+
+body {
+  background-color: white;
+}
+
+nav {
+  text-align: center;
+  font-size: 25px;
+  position: fixed;
+  z-index: 10;
+}
+
+.font-type {
+  font-family: 'Della Respira', serif;
+  font-size: 20px;
 }
